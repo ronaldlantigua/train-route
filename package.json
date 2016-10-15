@@ -16,8 +16,10 @@
     "url": "https://github.com/ronaldlantigua/train-route/issues"
   },
   "homepage": "https://github.com/ronaldlantigua/train-route#readme",
-  "dependencies": {
+  "devDependencies": {
     "grunt": "^1.0.1",
-    "less": "^2.7.1"
+    "grunt-contrib-less": "^1.4.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "jit-grunt": "^0.10.0"
   }
 }
