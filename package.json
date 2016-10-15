@@ -1,0 +1,23 @@
+{
+  "name": "train_route",
+  "version": "1.0.0",
+  "description": "Train deperture and arrive",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ronaldlantigua/train-route.git"
+  },
+  "author": "Ronald Lantigua",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ronaldlantigua/train-route/issues"
+  },
+  "homepage": "https://github.com/ronaldlantigua/train-route#readme",
+  "dependencies": {
+    "grunt": "^1.0.1",
+    "less": "^2.7.1"
+  }
+}
