@@ -12,7 +12,7 @@ module.exports = function(grunt) {
           optimization: 2
         },
         files: {
-          "build/css/main.css": "less/main.less" // destination file and source file
+          "build/css/main.min.css": "less/main.less" // destination file and source file
         }
       }
     },
@@ -24,10 +24,26 @@ module.exports = function(grunt) {
           nospawn: true
         }
       }
-    }
+    },
+    uglify: {
+	    my_target: {
+	      files: [{
+	          expand: true,
+	          cwd: 'build/js',
+	          src: '**/*.js',
+	          dest: 'build/js/'
+	      }]
+    	}
+  	},
+  	concat: {
+	    basic: {
+	        src: ['js/*.js'],
+	        dest: 'build/js/main.min.js',
+	    },
+  	}
   });
 
   // A very basic default task.
-  grunt.registerTask('default', ['less', 'watch']);
+  grunt.registerTask('default', ['concat','uglify', 'less', 'watch']);
 
 };
